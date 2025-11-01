@@ -6,11 +6,10 @@ services:
       - "8080:8080"
   db:
     image: "mysql"
-    environment: 
+    environment:
       MYSQL_ROOT_PASSWORD: password
     volumes:
       - db-data:/foo
 
 volumes:
   db-data:
-
